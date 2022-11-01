@@ -34,4 +34,9 @@ export const checkApproveAmount = async (params:ICheckApproveAmountOptions): Pro
         throw (error);
     }
 };
-checkApproveAmount({stakedAddress:'0x3Fd294009eEff2636e05f1A6c956d9df7e340287',spenderAddess:'0x00200eA4Ee292E253E6Ca07dBA5EdC07c8Aa37A3',tokenContractAddress:'0x499d11E0b6eAC7c0593d8Fb292DCBbF815Fb29Ae'}).then((result)=>(console.log("Result: ",JSON.stringify(result))))
+checkApproveAmount({
+    stakedAddress:'0x3Fd294009eEff2636e05f1A6c956d9df7e340287',
+    spenderAddess:'0x00200eA4Ee292E253E6Ca07dBA5EdC07c8Aa37A3',
+    tokenContractAddress:'0x499d11E0b6eAC7c0593d8Fb292DCBbF815Fb29Ae'
+})
+.then((result)=>(console.log("Result: ",JSON.stringify(result))))
